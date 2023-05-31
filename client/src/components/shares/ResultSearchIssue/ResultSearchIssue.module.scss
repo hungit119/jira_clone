@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background 0.1s ease 0s;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.2;
+  font-weight: 400;
+  &:hover {
+    background: rgb(235, 236, 240);
+  }
+}
+.body {
+  padding-left: 15px;
+}
+.title {
+  color: rgb(66, 82, 110);
+  font-size: 15px;
+}
+.type {
+  text-transform: uppercase;
+  color: rgb(94, 108, 132);
+  font-size: 12.5px;
+}

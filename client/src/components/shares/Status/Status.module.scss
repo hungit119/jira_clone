@@ -1,0 +1,29 @@
+.wrapper {
+  text-transform: uppercase;
+  transition: all 0.1s ease 0s;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 24px;
+  padding: 0px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  color: rgb(66, 82, 110);
+  font-weight: normal;
+  font-size: 12px;
+}
+.backlog {
+  background-color: rgb(223, 225, 230);
+}
+.selected {
+  background-color: rgb(223, 225, 230);
+}
+.progress {
+  background-color: rgb(0, 82, 204);
+  color: white;
+}
+.done {
+  background-color: rgb(11, 135, 91);
+  color: white;
+}

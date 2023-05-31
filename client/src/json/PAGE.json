@@ -1,0 +1,343 @@
+[
+  {
+    "name": "Users config",
+    "sid": "users",
+    "apiFindData": "user",
+    "schema": [
+      {
+        "field": "email",
+        "widget": "Input",
+        "name": "Email",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "username",
+        "widget": "Input",
+        "name": "Username",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "avatar",
+        "widget": "Input",
+        "name": "Avatar",
+        "type": "string"
+      },
+      {
+        "field": "password",
+        "widget": "Input",
+        "name": "Password",
+        "type": "string",
+        "readOnly": true,
+        "required": true
+      }
+    ],
+    "grid": [
+      {
+        "name": "Username",
+        "field": "username",
+        "type": "string",
+        "filterable": true,
+        "search": true
+      },
+      {
+        "name": "Email",
+        "field": "email",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Avatar",
+        "field": "avatar",
+        "type": "string"
+      }
+    ],
+    "button": [
+      {
+        "name": "Create",
+        "icon": "IoAddOutline",
+        "variant": "primary",
+        "action": "api",
+        "api": "createUser",
+        "mode": "create",
+        "position": ["modal", "table"]
+      },
+      {
+        "name": "Update",
+        "icon": "IoBrushOutline",
+        "action": "api",
+        "apiFindData": "findUser",
+        "api": "updateUser",
+        "mode": "update",
+        "variant": "text",
+        "position": ["modal", "action"]
+      },
+      {
+        "name": "Delete",
+        "icon": "IoTrashOutline",
+        "action": "api",
+        "api": "deleteUser",
+        "mode": "delete",
+        "variant": "text",
+        "position": ["action"]
+      }
+    ]
+  },
+  {
+    "name": "Projects config",
+    "sid": "projects",
+    "apiFindData": "project",
+    "schema": [
+      {
+        "field": "title",
+        "widget": "Input",
+        "name": "Title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "url",
+        "widget": "Input",
+        "name": "URL",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "description",
+        "widget": "TextArea",
+        "name": "Description",
+        "type": "string"
+      },
+      {
+        "field": "category",
+        "widget": "Select",
+        "name": "Category",
+        "apiListData": "findModalCategory",
+        "placeholder": "Select category",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "user_created",
+        "widget": "Select",
+        "name": "User Owner",
+        "apiListData": "findModalUsers",
+        "placeholder": "Select user owner",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "grid": [
+      {
+        "name": "Title",
+        "field": "title",
+        "type": "string",
+        "filterable": true,
+        "search": true
+      },
+      {
+        "name": "URL",
+        "field": "url",
+        "type": "string"
+      },
+      {
+        "name": "Description",
+        "field": "description",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Category",
+        "field": "category",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "User Owner",
+        "field": "user_created",
+        "type": "string"
+      }
+    ],
+    "button": [
+      {
+        "name": "Create",
+        "icon": "IoAddOutline",
+        "variant": "primary",
+        "action": "api",
+        "api": "createProject",
+        "mode": "create",
+        "position": ["modal", "table"]
+      },
+      {
+        "name": "Update",
+        "icon": "IoBrushOutline",
+        "action": "api",
+        "mode": "update",
+        "apiFindData": "findProject",
+        "api": "updateProject",
+        "variant": "text",
+        "position": ["modal", "action"]
+      },
+      {
+        "name": "Delete",
+        "icon": "IoTrashOutline",
+        "action": "api",
+        "api": "deleteProject",
+        "mode": "delete",
+        "variant": "text",
+        "position": ["action"]
+      }
+    ]
+  },
+  {
+    "name": "Issues config",
+    "sid": "issues",
+    "apiFindData": "issue",
+    "schema": [
+      {
+        "field": "type",
+        "widget": "Select",
+        "placeholder": "Select type",
+        "apiListData": "findModalTypes",
+        "name": "Type",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "title",
+        "widget": "Input",
+        "name": "Title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "description",
+        "widget": "TextArea",
+        "name": "Description",
+        "type": "string"
+      },
+      {
+        "field": "status",
+        "widget": "Select",
+        "name": "Status",
+        "placeholder": "Select status",
+        "apiListData": "findModalStatus",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "reporter",
+        "widget": "Select",
+        "name": "Reporter",
+        "apiListData": "findModalUsers",
+        "placeholder": "Select reporter",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "priority",
+        "widget": "Select",
+        "name": "Priority",
+        "apiListData": "findModalPriority",
+        "placeholder": "Select priority",
+        "type": "string",
+        "required": true
+      },
+      {
+        "field": "project_owner",
+        "widget": "Select",
+        "apiListData": "findModalProjects",
+        "name": "Project Owner",
+        "type": "string",
+        "placeholder": "Select project owner",
+        "required": true
+      },
+      {
+        "field": "original_estimate",
+        "widget": "Input",
+        "name": "Orginal estimate",
+        "type": "integer",
+        "required": true
+      }
+    ],
+    "grid": [
+      {
+        "name": "Type",
+        "field": "type",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Title",
+        "field": "title",
+        "type": "string",
+        "filterable": true,
+        "search": true
+      },
+      {
+        "name": "Description",
+        "field": "description",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Status",
+        "field": "status",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Reporter",
+        "field": "reporter",
+        "type": "string"
+      },
+      {
+        "name": "Priority",
+        "field": "priority",
+        "type": "string",
+        "filterable": true
+      },
+      {
+        "name": "Orginal estimate",
+        "field": "original_estimate",
+        "type": "integer"
+      },
+      {
+        "name": "Project Owner",
+        "field": "project_owner",
+        "type": "string"
+      }
+    ],
+    "button": [
+      {
+        "name": "Create",
+        "icon": "IoAddOutline",
+        "variant": "primary",
+        "action": "api",
+        "api": "createIssue",
+        "mode": "create",
+        "position": ["modal", "table"]
+      },
+      {
+        "name": "Update",
+        "icon": "IoBrushOutline",
+        "action": "api",
+        "apiFindData": "findIssue",
+        "api": "updateIssue",
+        "mode": "update",
+        "variant": "text",
+        "position": ["modal", "action"]
+      },
+      {
+        "name": "Delete",
+        "icon": "IoTrashOutline",
+        "action": "api",
+        "api": "deleteIssue",
+        "mode": "delete",
+        "variant": "text",
+        "position": ["action"]
+      }
+    ]
+  }
+]

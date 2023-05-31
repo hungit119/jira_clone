@@ -1,0 +1,39 @@
+.wrapper {
+}
+.path {
+  color: rgb(94, 108, 132);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.check-mark {
+  position: relative;
+  margin: 0px 10px;
+  font-size: 18px;
+}
+.header {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-user {
+  width: 200px;
+}
+.button {
+  background-color: #ebecf0;
+  align-items: center;
+  border-radius: 3px;
+  color: #42526e;
+  display: inline-flex;
+  font-size: 14.5px;
+  justify-content: center;
+  line-height: 14.5px;
+  padding: 6px 12px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.display-none {
+  display: none;
+}

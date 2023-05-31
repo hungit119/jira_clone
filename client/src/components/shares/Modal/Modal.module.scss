@@ -1,0 +1,15 @@
+.wrapper {
+  display: none;
+}
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(9, 30, 66, 0.54);
+}
+.popup-modal {
+  display: block;
+}

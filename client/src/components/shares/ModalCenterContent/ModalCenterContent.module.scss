@@ -1,0 +1,29 @@
+.wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 50px;
+  background-color: transparent;
+  overflow-y: scroll;
+  display: none;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  vertical-align: middle;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+}
+
+.actived {
+  display: block;
+}
+.not-padding {
+  padding: 0;
+}

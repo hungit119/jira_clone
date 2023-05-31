@@ -1,0 +1,51 @@
+.wrapper {
+}
+.page {
+  padding: 30px;
+}
+.header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.filter {
+  margin-top: 64px;
+  display: flex;
+  justify-content: flex-end;
+}
+.filter-wrapper {
+  display: flex;
+}
+.search-input {
+  width: 400px;
+}
+.buttons-group {
+  margin-left: 6px;
+}
+.content {
+  margin-top: 36px;
+}
+.action-icon {
+  cursor: pointer;
+  user-select: none;
+}
+.btn-action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  font-size: 13px;
+}
+.title-btn {
+  margin-left: 4px;
+}

@@ -1,0 +1,50 @@
+.wrapper {
+  position: relative;
+}
+.select {
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid rgb(223, 225, 230);
+  background: rgb(244, 245, 247);
+  transition: background 0.1s ease 0s;
+  user-select: none;
+}
+.results-select {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 32px;
+  padding: 5px 5px 5px 10px;
+  color: rgb(137, 147, 164);
+}
+.value-selected {
+  color: rgb(23, 43, 77);
+  margin-right: 18px;
+  display: flex;
+}
+.arrow-drown {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+.focus {
+  outline: none;
+  border: 1px solid rgb(76, 154, 255);
+  box-shadow: rgb(76, 154, 255) 0px 0px 0px 1px;
+  background: rgb(255, 255, 255);
+}
+.add {
+  color: rgb(0, 82, 204);
+  display: flex;
+  align-items: center;
+  font-size: 12.5px;
+  font-weight: 500;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,46 @@
+.wrapper {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 32px;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 0px 12px;
+  white-space: nowrap;
+  border-radius: 3px;
+  transition: all 0.1s ease 0s;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14.5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(66, 82, 110);
+  font-weight: 400;
+  margin-left: 6px;
+  &:hover {
+    background: rgb(235, 236, 240);
+  }
+}
+.selected {
+  color: rgb(0, 82, 204);
+  background: rgb(210, 229, 254) !important;
+}
+.primary {
+  font-weight: 500;
+  background-color: rgb(0, 82, 204);
+  color: rgb(255, 255, 255);
+  &:hover {
+    background: rgb(0, 94, 235);
+  }
+}
+.info {
+  background-color: transparent;
+}
+.defaultButton {
+  margin: 0;
+}
+.mtl {
+  margin-left: 4px;
+}

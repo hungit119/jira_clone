@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e8afd;
+}
+
+.content {
+  border-radius: 10px;
+  min-width: 500px;
+  background-color: white;
+  padding: 24px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.sign-in-gg {
+  margin-top: 8px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    border: 1px solid #0e8afd;
+  }
+  span {
+    margin-left: 4px;
+  }
+}
+.optional {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: underline;
+  font-size: 13px;
+  margin-top: 8px;
+  color: #777;
+  margin-bottom: 8px;
+}
+.btn-group {
+  width: 100%;
+}
+.btn-login {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+.wrapper {
+  margin-top: 64px;
+  width: 174px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(7, 71, 166);
+  height: 92%;
+  padding: 94px 0;
+}
+.sidebar-item {
+  color: white;
+  padding: 12px 24px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+.is-active {
+  background-color: rgba(255, 255, 255, 0.1);
+}

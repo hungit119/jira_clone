@@ -1,0 +1,88 @@
+.wrapper {
+}
+.header {
+  padding: 21px 18px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.title-btn {
+  margin-left: 4px;
+}
+.body {
+  display: flex;
+  padding: 0px 30px 60px;
+}
+.content {
+  width: 65%;
+  padding-right: 50px;
+}
+.info {
+  width: 34%;
+}
+.header-input {
+  margin: 18px 0px 0px -8px;
+  height: 47.6px;
+  padding: 7px 7px 8px;
+  line-height: 1.28;
+  resize: none;
+  background: rgb(255, 255, 255);
+  border: 1px solid transparent;
+  box-shadow: transparent 0px 0px 0px 1px;
+  transition: background 0.1s ease 0s;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 3px;
+  width: 100%;
+  color: rgb(23, 43, 77);
+  &:focus {
+    border: 1px solid rgb(76, 154, 255);
+    box-shadow: rgb(76, 154, 255) 0px 0px 0px 1px;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &:hover {
+    background-color: rgb(235, 236, 240);
+  }
+}
+.group-btn {
+  margin-left: -4px;
+  padding-top: 12px;
+}
+.comments {
+  padding-top: 40px;
+}
+.header-comment {
+  color: rgb(23, 43, 77);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.add-comment-tip {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgb(223, 225, 230);
+  color: rgb(137, 147, 164);
+  cursor: pointer;
+  user-select: none;
+}
+.comment-note {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.m {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  margin: 0px 4px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  color: rgb(23, 43, 77);
+  background: rgb(223, 225, 230);
+  font-weight: normal;
+  font-size: 12px;
+}
+.comment-list {
+  margin-top: 12px;
+}
